@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Markdown InstaSite
+# Put up a site in seconds with Markdown Instasite. Simply place your markdown-
+# formatted pages into "src/", run "build.sh" and you're done. Take the hassle
+# out of making sure your site looks great.
+# Author: Verdi R-D
+# Date: March 22nd, 2013
 
 
 MDBIN="Markdown.pl"
@@ -27,14 +33,11 @@ fi
 # Create the build directory
 mkdir "$BUILDDIR"
 
-# Copy over any static files there may be to beautify
-# the site
+# Copy over any static files there may be to beautify the site
 
 if [ -d "$STATICDIR" ]; then
 	echo -n "INFO: Copying over static files..."
-
 	cp -R "$STATICDIR/" "$BUILDDIR/"
-
 	echo "Done."
 else
 	echo "WARNING: Directory for static files could not be found." >&2
@@ -49,9 +52,6 @@ for FILE in $(find "$SRCDIR" -type f); do
 	if [ -d "$FILE" ]; then
 		# This is a directory. Don't compile.
 		mkdir "$BUILDDIR/$FILE"
-
-
-
 
 	else
 		echo -n "INFO: Compiling $FILE..."
