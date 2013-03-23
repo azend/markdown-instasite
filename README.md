@@ -23,4 +23,4 @@ Advanced configuration
 ----------------------
 If you're an IT ninja and the default configuration doesn't work for you, many of the configuration file/folder names can be changed in the top varible declarations of the build script. This will let you change around folder names or whatever to better suit your needs.
 
-However, f you really are an IT ninja, you've probably stopped reading this already and have moved on to look at the build script instead anyways.
+However, if you really are an IT ninja, you've probably stopped reading this already and have moved on to look at the build script instead anyways.
