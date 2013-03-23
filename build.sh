@@ -10,16 +10,20 @@
 
 MDBIN="Markdown.pl"
 
-MDEXT=".md"
-HTMLEXT=".html"
+MDEXT=".md" # The extension of Markdown formatted source files
+HTMLEXT=".html" # The extension of the final outputted pages
 
-SRCDIR="src"
-TPLDIR="tpl"
-STATICDIR="static"
-BUILDDIR="build"
+SRCDIR="src" # The directory where the source pages are found
+TPLDIR="tpl" # The directory where templates are to be found
+STATICDIR="static" # The directory where any non-generated files can be placed
+BUILDDIR="build" # The output directory
 
-HEADERTPL="header.html"
-FOOTERTPL="footer.html"
+HEADERTPL="header.html" # Name of the header file to be added to all pages
+FOOTERTPL="footer.html" # Name of the footer file to be added to all pages
+
+##############################################################
+#####  NO MODIFICATIONS SHOULD BE NEEDED PAST THIS POINT #####
+##############################################################
 
 BASEPATH=$( pwd )
 
