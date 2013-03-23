@@ -20,4 +20,4 @@ Steps
 
 4. Run `./build.sh` to build your site
 
-5. Edit the `.htaccess` file to rewrite all incoming requests to inside your `build` directory
+5. Edit the provided `.htaccess` file to rewrite all incoming requests to inside your `build/` directory
